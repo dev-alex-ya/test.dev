@@ -4,4 +4,4 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $app = new \Slim\App(['displayErrorDetails' => true]);
 
-$app->get('/', function (){return "index";});
+require __DIR__ . '/../app/routes.php';
