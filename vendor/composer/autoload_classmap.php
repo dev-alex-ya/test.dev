@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Controllers\\Controller' => $baseDir . '/app/Controllers/Controller.php',
+    'App\\Controllers\\HomeController' => $baseDir . '/app/Controllers/HomeController.php',
     'FastRoute\\BadRouteException' => $vendorDir . '/nikic/fast-route/src/BadRouteException.php',
     'FastRoute\\DataGenerator' => $vendorDir . '/nikic/fast-route/src/DataGenerator.php',
     'FastRoute\\DataGenerator\\CharCountBased' => $vendorDir . '/nikic/fast-route/src/DataGenerator/CharCountBased.php',
@@ -53,6 +55,7 @@ return array(
     'Slim\\DeferredCallable' => $vendorDir . '/slim/slim/Slim/DeferredCallable.php',
     'Slim\\Exception\\ContainerException' => $vendorDir . '/slim/slim/Slim/Exception/ContainerException.php',
     'Slim\\Exception\\ContainerValueNotFoundException' => $vendorDir . '/slim/slim/Slim/Exception/ContainerValueNotFoundException.php',
+    'Slim\\Exception\\InvalidMethodException' => $vendorDir . '/slim/slim/Slim/Exception/InvalidMethodException.php',
     'Slim\\Exception\\MethodNotAllowedException' => $vendorDir . '/slim/slim/Slim/Exception/MethodNotAllowedException.php',
     'Slim\\Exception\\NotFoundException' => $vendorDir . '/slim/slim/Slim/Exception/NotFoundException.php',
     'Slim\\Exception\\SlimException' => $vendorDir . '/slim/slim/Slim/Exception/SlimException.php',
