@@ -12,7 +12,7 @@ $container = $app->getContainer();
 
 $container['view'] = function ($container) {
     $view = new \Slim\Views\Twig(__DIR__.'/../resources/views', [
-        'cache' => false
+        'cache' => false,
     ]);
     
     $view->addExtension(new \Slim\Views\TwigExtension(
@@ -26,7 +26,7 @@ $container['view'] = function ($container) {
 
 $container['HomeController'] = function ($container)
 {
-    return new \App\Controllers\HomeController($container->view);
+    return new \App\Controllers\HomeController($container);
 };
 
 
