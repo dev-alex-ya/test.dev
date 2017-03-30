@@ -4,6 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+*sdf
+*/
+
 class User extends Model
 {
   protected $table = 'users'; //привязываем таблицу из БД к классу
