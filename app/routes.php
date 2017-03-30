@@ -8,9 +8,4 @@ $app->get('/home', function($request, $response){
 
 
 $app->get('/', 'HomeController:index');
-$app->get('/home', 'HomeController:home');
-
-
-
-
-
+$app->get('/auth/signup', 'AuthController:getSignUp')->setName('auth.signup');
